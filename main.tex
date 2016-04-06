@@ -1,0 +1,87 @@
+%\documentclass[manuscript]{aastex}
+\documentclass[iop]{emulateapj}
+
+\shorttitle{High obliquity orbit for HATS-14b}
+\shortauthors{Zhou et al.}
+
+
+%%% packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{array}
+{\renewcommand{\arraystretch}{4}%
+
+\newcommand{\myemail}{george.zhou@anu.edu.au}
+
+
+\begin{document}
+
+\title{Simultaneous WD1145+017}
+
+\author{First Author\altaffilmark{1},
+et al.\altaffilmark{2}}
+
+\altaffiltext{1}{first affil \email{\myemail}}
+\altaffiltext{2}{altaffilmark2}
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+\keywords{keywords}
+
+\section{Introduction}
+\label{sec:introduction}
+
+\section{Observations}
+\label{sec:observations}
+
+\subsection{AAT $J$ band observations}
+\label{sec:obs_aat}
+
+We obtained near infrared light curves for WD1145+017 using the IRIS2 camera on the 3.9\,m Anglo-Australian Telescope, located at Siding Spring Observatory, Australia. IRIS2 is a near infrared camera, with a $1\,\mathrm{K} \times 1\,\mathrm{K}$ HAWAII-1 HgCdTe infrared detector, read out over four quadrants, achieving a field of view of $7.7 \times 7.7 '$ and a pixel scale of $0.4486''\,\mathrm{pixel}^{-1}$. Our observations were performed in the $J$ band, at 30\,s exposure time, and each exposure was read out in double-read mode. The observing strategy, data reduction, and photometry extraction procedures are laid out in \citet{2014MNRAS.445.2746Z} and \citet{2015MNRAS.454.3002Z}. Each sequence of light curves are obtained in guided mode, with the observer manually inputting additional corrections every $\sim 10$\,minutes to ensure the target and reference stars stay on the same pixel throughout. Dithered sequences bracketting the stare sequence provide the flat field and sky background corrections. Due to the faintness of the target, these observations were performed in focus, unlike standard IRIS2 photometric observations. Photometry of the target and reference stars were extracted from circular apertures at a series of radii, and the background is estimated by drawing annuli surrounding each aperture.
+
+
+
+
+
+\section{Light curve analysis}
+\label{sec:lightcurve_model}
+
+\subsection{Hyperbolic secant fit}
+\label{sec:hyperbol}
+
+Following \citet{2012ApJ...752....1R} and \citet{2015arXiv151006434C}, we fit the transits by hyperbolic secant functions. Each transit is described by a depth $C_\mathrm{band}$, timing reference $\tau_0$, and characteristic timescales for ingress $\tau_1$ and egress $\tau_2$:
+\begin{equation}
+  F(t) = \mathrm{OOT} - C \left( \exp{-(t-\tau0)/\tau1} + \exp{(t-\tau0)/\tau2} \right)^{-1}\,.
+\end{equation}
+To isolate potential depth differences between the simultaneous, multi-band light curves, we fit for a common shape across the light curves from a given night. The transit center and characteristic timescale parameters $\tau_0$, $\tau_1$, and $\tau_2$ are shared amongst each light curve, while the depth $C$ for the tranist in each band is indepdent.
+
+The set of light curves from each night are fitted via a Markov chain Monte Carlo analysis, using the \emph{emcee} \citep{2013PASP..125..306F} affine invariant ensemble sampler. Since the transits are of short duration, we account for the long integration time of the follow-up optical light curves by fitting models that are smoothed by moving averages with windows corresponding to the respective exposure times.
+
+Figure~X shows the 
+
+\begin{figure*}
+    \centering
+    \includegraphics{}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure*}
+
+
+
+
+
+At each iteration, we also remove any long-term trends in the model residuals with a fourth order polynomial. 
+
+
+\acknowledgments
+acknowledgments
+
+Facilities: \facility{AAT}
+
+\bibliographystyle{apj}
+\bibliography{mybibfile}
+
+\end{document}
