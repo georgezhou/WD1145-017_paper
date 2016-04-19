@@ -1,7 +1,22 @@
-
-%% $Log: apj.bst,v $
 %%
-%% Modifed 2013/06/20 by J.H. To print ArXiv eprint numbers
+%% $Log: apj.bst,v $
+%% Revision 1.10 2013/03/11 13:01:55 alberto
+%% Reworked code to use format.pid for articles without proper
+%% pagination which then leads the system to use either an eprint
+%% id or a DOI; this will solve most problems with citing early
+%% access articles (no volume of page available, but online).
+%% Removed bibliography count from preamble since it seems to
+%% confuse some versions of latex.
+%% 
+%% Revision 1.9 2013/2/19 Erik Tollerud <erik.tollerud@yale.edu> 
+%% fixes for spurious error messages due to rev 1.8 changes
+%% also fixed missing publisher field printing in "book"
+%%
+%% Revision 1.8  2013/01/10 16:31:34  alberto
+%% Added proper formatting of arXiv eprint entries output by ADS
+%% (thse are article records, but the eprint id is printed only 
+%% if no traditional page number is available).  Also added support
+%% for ASCL entries under the "misc" category.
 %%
 %% Revision 1.7  2011/11/21 13:10:12  alberto
 %% Implemented new ApJ formatting rules: for papers with more than
@@ -87,9 +102,11 @@
 
 ENTRY
   { address
+    archivePrefix
     author
     booktitle
     chapter
+    doi
     edition
     editor
     eprint
@@ -362,47 +379,6 @@ FUNCTION {eng.ord}
    if$
 }
 
-MACRO {acmcs} {"ACM Comput. Surv."}
-
-MACRO {acta} {"Acta Inf."}
-
-MACRO {cacm} {"Commun. ACM"}
-
-MACRO {ibmjrd} {"IBM J. Res. Dev."}
-
-MACRO {ibmsj} {"IBM Syst.~J."}
-
-MACRO {ieeese} {"IEEE Trans. Softw. Eng."}
-
-MACRO {ieeetc} {"IEEE Trans. Comput."}
-
-MACRO {ieeetcad}
- {"IEEE Trans. Comput.-Aided Design Integrated Circuits"}
-
-MACRO {ipl} {"Inf. Process. Lett."}
-
-MACRO {jacm} {"J.~ACM"}
-
-MACRO {jcss} {"J.~Comput. Syst. Sci."}
-
-MACRO {scp} {"Sci. Comput. Programming"}
-
-MACRO {sicomp} {"SIAM J. Comput."}
-
-MACRO {tocs} {"ACM Trans. Comput. Syst."}
-
-MACRO {tods} {"ACM Trans. Database Syst."}
-
-MACRO {tog} {"ACM Trans. Gr."}
-
-MACRO {toms} {"ACM Trans. Math. Softw."}
-
-MACRO {toois} {"ACM Trans. Office Inf. Syst."}
-
-MACRO {toplas} {"ACM Trans. Prog. Lang. Syst."}
-
-MACRO {tcs} {"Theoretical Comput. Sci."}
-
 INTEGERS { nameptr namesleft numnames numtrunc }
 
 FUNCTION {format.names}
@@ -660,6 +636,39 @@ FUNCTION {output.bibitem}
   newline$
   ""
   before.all 'output.state :=
+}
+
+
+FUNCTION {format.doi}
+{ doi empty$
+    { "" }
+    { "doi:" doi * }
+  if$
+}
+
+FUNCTION {format.eprint}
+{ eprint empty$
+    { "" }
+    { archivePrefix empty$
+        { "" }
+        { archivePrefix ":" * }
+      if$
+      eprint field.or.null
+      *
+    }
+  if$
+}
+
+% Formats a persistent identifier (PID)
+% (typically a DOI or an eprint id)
+% You can easily swap the order of which PID
+% gets picked
+%
+FUNCTION {format.pid}
+{ eprint empty$
+    { format.doi }
+    { format.eprint }
+  if$
 }
 
 FUNCTION {n.dashify}
@@ -1068,24 +1077,18 @@ FUNCTION {article}
   format.date "year" output.check
   date.block
   crossref missing$
-    { journal "ArXiv e-prints" =
-      {
-        journal
-        "journal" output.check
-        eprint output 
-      }
-      {
-        journal
-        "journal" output.check
-        format.vol.num.pages output
-      }
-      if$
+    { journal
+      "journal" output.check
+      format.vol.num.pages output
     }
     { format.article.crossref output.nonnull
       format.pages output
     }
   if$
-  format.journal.pages
+  pages empty$
+    { format.pid output }
+    { format.journal.pages }
+  if$
   format.note output
   fin.entry
 }
@@ -1121,6 +1124,7 @@ FUNCTION {book}
 %  if$
   format.pages output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1135,6 +1139,7 @@ FUNCTION {booklet}
   howpublished output
   address output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1242,6 +1247,7 @@ FUNCTION {manual}
   organization output
   address output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1257,6 +1263,7 @@ FUNCTION {mastersthesis}
   school "school" output.check
   address output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1270,6 +1277,7 @@ FUNCTION {misc}
   format.title output
   howpublished output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1285,6 +1293,7 @@ FUNCTION {phdthesis}
   school "school" output.check
   address output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1333,6 +1342,7 @@ FUNCTION {techreport}
   institution "institution" output.check
   address output
   format.note output
+  format.pid output
   fin.entry
 }
 
@@ -1345,6 +1355,7 @@ FUNCTION {unpublished}
   date.block
 %  format.title "title" output.check
   format.note "note" output.check
+  format.pid output
   fin.entry
 }
 
@@ -1646,7 +1657,8 @@ FUNCTION {begin.bib}
     'skip$
     { preamble$ write$ newline$ }
   if$
-  "\begin{thebibliography}{" number.label int.to.str$ * "}" *
+%  "\begin{thebibliography}{" number.label int.to.str$ * "}" *
+  "\begin{thebibliography}{}"
   write$ newline$
   "\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi"
   write$ newline$
