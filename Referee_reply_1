@@ -1,0 +1,238 @@
+Dear editor,
+
+We thank the editor for forwarding us the reviewer's response to our manuscript. In the response below, we have responded to specific criticisms raised by the referee. Responses are placed directly below the referee’s original comments (indented paragraphs denoted by ‘>>>’).
+
+The tone of the referee’s report was unduly negative (e.g. casting aspersions on the co-authors’ contributions), and its quality was demonstrably lacking (e.g. failure to read the figure captions, dismissal of the disc modelling under weak pretence, an overly focused on formatting over scientific substance). It does not therefore represent a fair assessment of our work. The manuscript follows a standard format for the reporting of transit observations, and has gone through thorough revision prior to submission. In addition, the referee's comments were extremely emotive, and among the co-authors there was a unanimous consensus that this referee report was highly unusual in this respect.  Comments relating to “the first author is a student or at an early career stage” is not relevant when reviewing a manuscript, and statements such as the manuscript "reflects poorly on the team” indicates the referee is considering the authors rather than the merits of the manuscript alone.  Based on these factors we do not believe that we can expect a fair review of the re-submission from this referee. We therefore request that this resubmission be sent to a second referee, such that the editors can receive a more accurate assessment of the quality of our manuscript in further iterations. 
+
+Best regards,
+
+George Zhou (on behalf of the authors)
+
+>>>The manuscript MN-16-1329-MJ, "Simultaneous infrared and optical observations of the transiting debris cloud around WD 1145+017" by Zhou et 
+>>>al. reports the first near-infrared photometry of transit events at this interesting source. It also adds rather mixed optical data, some of 
+>>>which is simultaneous, some not, and attempts to draw some conclusions on the size of occluding particles based on multi-color transit depths 
+>>>(and SED analysis).
+>>>In principle these data contribute uniquely to the growing literature on this intriguing and possibly transient source. However, the paper 
+>>>suffers from several major problems, the most acute of which is that the paper is neither coherent, nor ready for a world-class journal in 
+>>>format, and it is clear that little or no proofreading nor effort has gone into it, despite the large number of authors. It has no real 
+>>>discussion or conclusion, and the text (and plots) of observations and photometry is so muddled and scattered as to be nearly incomprehensible 
+>>>to the reader.
+>>>I recommend (very) major revision because it is possible the first author is a student or at an early career stage, and has not received the 
+>>>support of her or his co-authors. Also, the target is of sufficient interest to the community, that if there is a coherent set of conclusions 
+>>>that can be drawn from the data, they would be of interest. But let me be clear that the submission is unacceptable for a world-class journal 
+>>>and the changes should reflect a commensurately high level of quality.
+>>>Major points:
+>>>-------------
+>>>The paper has not been formatted for the journal, has been either hastily or sloppily written and reflects poorly on the team. The paper as a 
+>>>whole is vague, repetitive, and very difficult to follow. The scientific presentation as a whole suffers badly, and virtually everything 
+>>>after the introduction could be re-written from scratch.
+>>>In particular, the observations are literally all over the place in the paper and leave the reader lost and searching - it is simply a 
+>>>labyrinth that may only be comprehensible to the first author. Since this is the meat of the paper, this presentation must be done 
+>>>differently, and in a way that is as crisp and clear to the reader as possible - each dataset should be discussed once, in a clear and 
+>>>focussed way, and then the text should move on. This is the biggest weakness in the paper and prevented me from following the data, its 
+>>>analysis, and any results to a large degree.
+
+This paper is structured as follows: Introduction, description of observations, description of analyses and modelling, and discussions. 
+
+There are three sets of observations presented in our work, described in Section 2: 
+
+Section 2.1: Infrared J-band observations from the AAT
+Section 2.2: Optical observations from an array of small telescopes that were taken simultaneous to the AAT J band dataset
+Section 2.3: Optical g' band observations from the LCOGT network that were taken 5 days after the simultaneous observations campaign
+
+The simultaneous multi-band observations allow us to probe for transit depth - colour dependencies. The single-band multi-epoch observations monitor for the temporal changes of the system. Each dataset was taken for a different purpose, and was modelled independently, as described in Section 3:
+
+Section 3.1: Models of the simultaneous near infrared and optical observations. The purpose of these models is to check for any colour dependence in the transit depths of the debris clouds surrounding WD1145+017
+Section 3.2: Models of the single-band observations from AAT and LCOGT, over a baseline of 1 month. These observations monitor for long-term changes to the system.
+
+The discussion, Section 4, puts the dust particle size limits inferred from the transits into context. In particular, prior to WD 1145+017, infrared excess of the spectral energy distribution of white dwarfs provided the only constraints on circumstellar particulates. We therefore devoted Section 4.1 of our discussion to the spectral energy distribution of WD 1145+017, and its consistency with inferences from the transit observations. 
+
+
+To make this structure clearer, we have made the following changes to the manuscript:
+
+* Figures 1 and 2 show the light curves from the simultaneous infrared / optical observations over two nights, and are now merged to Figure 1. 
+
+* Section 3 (Analysis) is now broken down into three subsections:
+Section 3.1: Modelling of the simultaneous near infrared and optical observations. 
+Section 3.2: Inferences on the dust properties from the transit depth -- colour dependence
+Section 3.3: Modelling of the single-band observations from AAT 
+Section 3.4: Modelling of the single-band observations from LCOGT
+
+* Section 4.1, the discussion on the spectral energy distribution has been made a separate section (Section 4).
+
+* Section 5 is now the Conclusions section, summarising the inferred debris disk properties from the transit observations and the spectral energy distribution analysis. 
+
+
+>>>Figure 6 is the only clear figure in the whole paper; perhaps the authors can build on this strength in representing their multi-night and 
+>>>multi-instrument data sets more clearly for the reader? Either a single table or figure might be used to make clear to the reader what the 
+>>>totality of data are and how they are used for the analysis. They might take their cue from other photometry papers on this object.
+
+Table 1 summarises the observations that were taken, including parameters such as dates, filter, exposure time, etc. Table 2 summarises the system parameters derived from the simultaneous multi-band observations (Section 3.1). Table 3 presents the derived system parameters from the single-band observations (Section 3.2 and 3.3). This format for the table is similar to that presented by Croll et al. 2016 (arXiv:1510.06434). 
+
+>>>The paper lacks any summary or conclusion; unacceptable for a world-class scientific publication.
+
+Section 5 is now the conclusions section.
+
+>>>I am highly skeptical that any inference can be drawn on the grain size from the analysis of the SED. Yes, some or all the emission may be 
+>>>optically thin, but then the grain size is model dependent. I don't agree that a collisional cascade is appropriate, and even then, there is 
+>>>no blow-out size so the dominant grains would be tiny (and inconsistent with the data and the authors own, tentative conclusions). This 
+>>>analysis either needs to be removed, or much better justified (though honestly I don't see how). The point of the optical-IR photometry is to 
+>>>constrain grain size, either the authors can do that, or not, but jumping to the SED as a last resort will not work. Importantly, if the bulk 
+>>>of emission is optically (and geometrically) thick, all bets are off -- this is not unreasonable as the clouds have been inferred to be many 
+>>>times the size of the star in other papers.
+
+1-3\% of white dwarfs have been found to exhibit infrared excess indicative of circumstellar disk materials. Of which, WD 1145+017 is the only one known to also exhibit transit events from the debris material. It is important to infer dust properties from both the transits and the SED, to put this target in the context of white dwarfs previously studied.
+
+We make the argument in our paper that the circumstellar disk is optically thin because the transits are <40\% deep. We make the assumption that the transiting material is in the plane of the circumstellar disk -- an assumption we make very clear in-text. We agree that if the disk is optically thick, then all bets are off. However, such a disk must then be misaligned with the transiting material (see Xu et al. 2016, ApJ, 816, L22). Additional evidence for alignment comes frm the 300 km/s rotational broadening for the gas measured by Xu et al. (2016) around the white dwarf, which would make the gas disk co-spatial with the assumed location of our dust in the SED modelling. As such the gas might reasonably be assumed to have been liberated from disintegrating planetesimals. 
+
+>>>Combining the data cannot be justified - just take a look at the photometry shown in G\”ansicke et al. These events come and go on a nightly 
+>>>basis, their shape changing hourly(!). Any averaging surely destroys information. It cannot really increase the authors S/N much to combine 
+>>>2 datasets, so why not treat the data by individual nights? Combining is certainly watering down real features and it can only weaken the 
+>>>signal of any modest events. 
+>>>This problem persists in later sections, where the authors continue to assume the transits are constant and combine these - there is no 
+>>>evidence to support constant structures, especially not over 5 nights. The authors eventually say they are not sure if a given feature being 
+>>>combined is the same event(!) .... well, neither am I, and therefore this analysis has to be thrown out or justified in a new and robust 
+>>>manner. As it stands, I don't see how any firm conclusions can be reached.
+
+We addressed this issue in two ways in the original manuscript:
+1) Table 2 presents the fitting results from the combined model fitting and from the per-epoch model fitting. The reader can choose to adopt the results from either analysis.
+2) WD 1145+017 appears to be going through a quiescent period at the time of observations. It exhibits one constant, deep, transit, as opposed to the multiple, highly variable transits seen in previous works (e.g. G\”ansicke et al. 2015). The transit depths and durations between each epoch are consistent to within 1 sigma. 
+
+Our approach is fully explained in Section 3.1.
+
+
+>>>Less major points:
+>>>------------------
+>>>- The last two statements in the abstract are confusing. Relatively small, micron-sized grains are in fact responsible for the infrared 
+>>>excesses seen at white dwarfs, as grain s of approximately the same size as the Spitzer and WISE wavelengths. Also, all dusty white dwarfs 
+>>>observed with IRS show strong silicate emission consistent with sub-micron grains. These may not be dominant, true, but the abstract is 
+>>>stated in such a way as the authors are unaware or confuse the reader. The collision-dominated supposition is not justified as mentioned 
+>>>above.
+
+We have modified the last sentences of the abstract, they now read:
+
+"This conclusion is consistent the spectral energy distribution of the system, which can be fit with an optically thin debris disc with minimum particle sizes of 10 +5/-3 um."
+
+>>>- In the introduction, the authors seem confused about the history of WD 1145. K2 detected very modest transit depths of **less than a few 
+>>>percent** (see Fig 1 + 2 of Vanderburg et al.), but when followed up from the ground were up to 40% or so. Also transits are indirect, not 
+>>>direct; the atmospheric pollution and dust disks are also indirect detection methods, as are radial velocities and microlensing.
+
+This statement has been clarified to 
+"Photometric monitoring of the white dwarf by the K2 mission (Howell et al. 2014) and subsequent ground-based follow-up revealed a series of asymmetric transits, with depths up to ~40\% and periods of 4.5 to 4.9 hours (Vanderburg et al. 2015)."
+
+>>>- The paper is sloppy in its use and overuse of the order of magnitude symbol (tilde, ~, \sim), which means 'with an order of magnitude' or 
+>>>'within a factor of 2-5'. This reflects poorly on the authors, and is a problem throughout the entire paper. Use approximate (e.g. \approx, 
+>>>two wavey lines) to mean approximate, as in within 10-20% or so. 
+
+There is no standard usage for the \approx and \sim symbols. It is also not stated in the MNRAS instructions for authors. 
+
+>>>- I suggest the authors clean up (better, rewrite completely) the observing section and instead of 3 separate, somewhat redundant and 
+>>>confusing sections, to streamline the observations into a single section, with clear references to their table. The data reduction and 
+>>>photometry should come *after* the observations, not in the middle. Overall, these are muddled and repetitive and confusing for the reader. 
+>>>Given the table, it should be straightforward. Also, perhaps best to give the bandpass central wavelength in the observing Table, and space 
+>>>can be saved by using two rows for the column headers.
+>>>[I've now come to read S3.2 and again the authors are back to discussing the observations, the same as in 2.1 - these sections need 
+>>>significant overhauling. Are these more observations or the same ones being mentioned over and over?].
+
+See response to major comments #1
+
+>>>- Figure 3 confuses me when I try to compare it to Figure 1, what is going on? These are the same data yet look completely different and, 
+>>>very much unconvincing in Figure 3. Please explain, this is totally obscure and I can't make any sense of this.
+>>>- What is the 'primary' and 'secondary' event? Are they labelled anywhere? Again, the reader is quickly lost in this presentation of data 
+>>>sets.
+
+Figure 3 of the original manuscript is of single band AAT near-infrared observations taken in 2016-02-16 -- 2016-02-21. Figure 1 and 2 of the original manuscript are of simultaneous multi-band observations taken on 2016-03-19 and 2016-03-20, respectively. They are different sets of observations, taken at different epochs, and hence look completely different. This is clearly stated in the respective figure captions, in-figure labels, and the summary of observations in Table 1, and in-text references.
+
+In the updated manuscript, the light curves from 2016-03-19 and 2016-03-20 have been combined into Figure 1. Figure 2 now present the light curves from 2016-02-16 -- 2016-02-21.
+
+>>>I am not surprised to read 'no significant asymmetry' is found, as they are probably washed out by averaging. Comparing these preliminary 
+>>>results to those taken earlier and by other teams must be done with caution since the sensitivity and cadence are both significantly 
+>>>different. Thus, I don't buy the authors conclusion that their IR data is different. This should either be re-stated with appropriate 
+>>>uncertainty or removed as an interpretation.
+
+1) We make the simple statement that no asymmetry was found in the 2016-03-19 and 2016-03-20 infrared and optical observations. We do not make the inference that previous WD 1145+017 transits exhibit no asymmetry. The fact that no detectable asymmetry is exhibited in this dataset is a testament to the evolution of the system.
+2) No asymmetry was detected in the independent per-epoch modelling of the 2016-03-19 and 2016-03-20 datasets, as well as the combined modelling (see Table 2).
+3) Asymmetry was detected in the February 2016 near infrared observations, as is stated in Section 3.2 and Table 3.
+
+>>>- In Table 2, list the bandpass wavelength without errors, or tabulate them in a clear and way that is not overly busy and microscopic for the 
+>>>reader. If the authors define the bandpasses as I suggest in Table 1, there is no need to repeat that in Table 2.- Tables 2 and 3 present similar data and parameters, but in different ways, confusing the reader. Either present them similarly or even 
+>>>better, combine these into a single table. The 5 or 6 decimal place error bars take up a lot of space, and the use of scientific notation can 
+>>>help.
+
+The bandpasses are now listed in Table 1. The uncertainties have been truncated to show the last significant figure.
+
+Table 3 is formatted different to Table 2 due to page space limitations. We could not fit Table 3 within the page width if it was formatted in the same way as Table 2.
+
+>>>Minor points:
+>>>-------------
+>>>- The first statement of the introduction: transits are indirect, not direct.
+
+Detection of transits from debris clouds is a significantly more 'direct' evidence of in-falling material on white dwarfs than inferences from SEDs or spectroscopic contaminations on the white dwarfs.
+
+>>>- What is meant by 'semi-periodic' dipping events in the introduction? This is unclear.
+
+This has been corrected to 'quasi-periodic' since the periods of the transits range from 4.5 to 4.9 hours.
+
+>>>- Why do they say 'probable transit events' in the introduction - are the authors suggesting something else?
+
+The word 'probable' has been removed.
+
+>>>- The authors have reference confusion when referring to the fraction of stars with detectable infrared excess - they cite Jura 2003 which is 
+>>>an important paper but not topical on this account. A more recent paper that also finds a similar fraction is Rocchetto et al. 2015.
+
+Rocchetto et al. 2015 has been added to the list of four other references for infrared excess of white dwarfs.
+
+>>>- Please round the photometry given in the introduction to 3 (or 4 at most) significant figures
+
+The photometric magnitudes have been rounded to 3 sig. figs.
+
+>>>- At the end of the introduction, they authors say 'subsequent'... do they mean simultaneous??
+
+No, we mean subsequent. The reader can refer to Table 1 to see the list of observations that were taken subsequent to the simultaneous near-IR / optical dataset.
+
+>>>- Please use fractional arcsec and arcmin with correct notation 0."7 and not 0.7" e.g.
+
+This has been changed.
+
+>>>- Sec 2.1 - how was 10% photometric precision achieved? By obtaining S/N > 10 on each exposure? If so, please state it clearly. If not, 
+>>>please explain. Photometric precision is discussed before the data reduction, this should probably come later.
+
+A S/N per exposure of >10 was used to judge the exposure times used during the observations. This has been clarified in the observations section.
+
+>>>- Define 'stable reference stars'. Were they in the same field or in another field? Details please.
+
+The observations were performed in stare mode. Reference stars were chosen within the field. The light curve of each field star was inspected to check for stellar variability, before being used as a reference star. This is standard procedure for transit photometry.
+
+>>>- State dates as YEAR MON DD, e.g. 2016 Mar 9, as stated in the instruction to authors (please re-read this for other formatting mistakes).
+
+This has been changed.
+
+>>>- The last two paragraphs of S2.1 are muddled and unclear. Which nights? Which telescopes? What wavelengths? Would a table help the 
+>>>authors? I see they have one but fail to refer to it. They also talk about optical observations in 2.1 but then have a whole S2.2 on this 
+>>>topic. Perhaps best to consolidate and clarify all this in these sections, and describe them less and more clearly in the text.
+
+This has been rephrased to the following:
+
+"The sets of AAT+IRIS2 observations are summarised in Table 1. J-band observations were obtained on 2016 Mar 19 and 2016 Mar 20. These were taken simultaneous with optical observations from a suite of small telescopes (Section 2.2). Poor weather meant only segments of light curves could be recovered on 2016 Mar 19. However conditions were photometric on 2016 Mar 20. These light curves are plotted in Figures 1 and 2. 
+
+Observations of WD 1145+017 were also obtained over five nights of 2016 Feb 16,17,19,20,21. These were not accompanied by simultaneous optical observations, and serve to provide a longer-term baseline to examine the near-infrared evolution of the debris cloud. These light curves are shown in Figure 3."
+
+
+>>>- The first paragraph of S2.2 seems to serve no purpose - remove.
+
+The paragraph informs the reader that this section describes the optical observations from small telescope that were taken simultaneously with the AAT+IRIS2 near infrared datasets.
+
+>>>- What is 'CDK'?
+
+Corrected Dall-Kirkham
+
+>>>- The authors say "the 0.32m Planewave CDK telescope" twice, and use the same name for two different geographical locations. This is 
+>>>confusing, please fix.
+
+Planewave is a telescope manufacture, CDK (Corrected Dall-Kirkham) is a line of telescopes manufactured by Planewave. Two observatories both use Planewave CDK 0.32m telescopes. 
+
+>>>- / pixel should be pixel^-1 (again, formatting mistakes)
+
+This has been changed.
+
+

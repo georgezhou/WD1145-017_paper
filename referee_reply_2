@@ -1,0 +1,75 @@
+We thank the reviewer for their careful consideration of our manuscript. We have made corrections to the manuscript, and responded to each point individually below, in-text changes have also been made bold.
+
+>>>Reviewer's Comments:
+>>>
+>>>This is an important and timely paper about the infrared light curve of the rapidly evolving system WD 1145+017.
+>>>
+>>>My main comment is about section 4. The authors explore the possibility of an optically thin edge-on dust disk related to the disintegrating objects as opposed to the standard opaque dust disk model. At 5.42*10^-3 AU, the dust temperature would be ~1100 K and dust particles could sublimate. Would this disk configuration be stable? In addition, are there any other predictions for an optically thin disk, that could be tested observationally?
+>>>
+
+The disk configuration could well be stable - so called ‘hot dust’ stars (e.g. Absil et al. 2013; Ertel et al. 2014; Marshall et al. 2016) - main sequence stars with near-infrared excess emission - have similarly hot dust in steady configurations (Ertel et al. 2016). If the dust grains are very small (a < 0.5 um) such that they are inefficient absorbers of incident (optical) radiation which would keep them cooler than the dust temperature of ~ 1100 K (Rieke et al. 2016). In the case of hot dust stars, the small grains are trapped by the stellar magnetic field, but in the case of WD1145+017 there is no removal via radiation pressure/stellar wind force, so their persistence might not be a problem. 
+
+This discussion has been added as a new paragraph at the end of Section 4.
+
+Regarding observationally testing the disk predictions, spectroscopic monitoring of the morphology of the emission lines may reveal the shape and size of the gas disk.
+
+>>>Here are some additional comments. This is a rapidly evolving system. In general, I think the authors should try to (i) use a method that is directly comparable to previous studies of the same system; (ii) make it easier for comparison with future follow-ups.
+>>>
+
+We generally following the modelling set out by Croll et al. 2016 (as well as Croll et al. 2014 in their analysis of KIC 1255). The transits are fitted by hyperbolic secant functions. The transit depths are reported as calculated from these fits, and are immediately comparable to those reported by previous studies fitted using the same functions. Since we did not obtain continuous, long term observations (e.g. as those presented in Rappaport et al. 2016), we do not track individual fragments or present ‘rain diagrams’ in our paper.
+
+>>>Page 2, line 10-11, the 300 km/s is the width of the circumstellar lines. That represents the spread of radial velocity in the observed material. The orbital velocity could be much bigger than this value.
+>>>
+
+This has been changed to "...suggesting the presence of circumstellar gas with line broadening velocities close to 300 km/s..."
+
+>>>Section 2, it will be helpful if the authors could provide the names of their reference stars for each observation?
+>>>
+
+The reference stars used are similar for each observation. We have added Figure 1 showing an example IRIS2 image of the field, with the target and reference stars marked.
+
+>>>Table 1, next last two clear filters seem to have the wrong band pass.
+>>>
+
+We thank the referee for picking out this error, they have been fixed to 0.58 -0.23/+0.19 um.
+
+>>>Figure 1, I would not suggest to use both orange and red. It becomes very hard to see for the Ellinbank R light curve. Same for Figure A1.
+>>>
+
+The orange lines have been changed to green on all plots.
+
+>>>Section 3.2, line 39-40, it is not clear to be how Rayleigh scattering could explain the potential wavelength dependence of transit.
+>>>
+
+We have changed ‘Rayleigh scattering’ with ‘blue-ward slope’ in that sentence.
+
+We have also added the following sentence to Section 3.2 paragraph 2 to explain the expected Rayleigh scattering effect.
+
+“In the optical, a blue-ward slope is expected for distributions of small particles due to the Rayleigh scattering effect. No detectable wavelength dependence is expected of dust clouds consisting of larger particles in the spectral range we surveyed.”
+
+>>>Section 3.2, line 46, could the authors list the optical properties (n, k) of the astronomical silicate?
+>>>
+
+We adopt n = 1.694, k = 0.02973 at lambda = 0.5 um. This is now noted in-text. The optical properties of astronomical silicates were obtained at ftp://ftp.astro.princeton.edu/draine/dust/diel/callindex.out_silD03
+
+>>>Figure 4, it looks like the Hazelwood & Elinbank Clear band observations on March 29, 2016 is the “outlier” of the observation. Any ideas why? Have the authors run the set of test separately for Hazelwood and Elinbank to see if each of them shows a different transit depth than R and V band?
+>>>
+
+We ran the fitting with Hazelwood and Elinbank 20160319 observations independently. The two observations agree within 1 sigma, with Hazelwood having a depth of 0.653 -0.072/+0.083 and Ellinbank depth of 0.583 -0.046/+0.044. We have attached version of the histogram for the 20160319 observations that show the individual depth histograms for each light curve. However, the depth of the Hazelwood observation is deeper than that of PEST V by 2.3 sigma even though they probe similar wavelength centroids. This is now also noted in-text. We don't find any good reason to exclude the Hazelwood observation from our analysis - the reference stars are stable, and the observation was not interrupted by weather during the transit. 
+
+The following paragraph is added to section 3.1 as a caution to using the single facility single night light curves:
+
+"To check for consistency between different facilities, we also fitted the Hazelwood and Ellinbank 2016 Mar 19 clear band observations separately, deriving depths of D_clear = 0.65 -0.07/+0.08 and 0.58 -0.05/+0.04, respectively. The two clear-band depths are self consistent to within 1 sigma, but the Hazelwood depth differs from that of the PEST V band depth by 2.3 sigma (even though bandpass centroids are similar). Since the transits from the optical facilities are relatively low signal-to-noise, it is difficult to make interpretations from a single-facility, single band light curve. We therefore are prompted to combine all all available light curves from the two nights into a joint analysis. "
+
+>>>Figure 5 is a very nice figure. However, I find there is little explanation in the text about how the grey curve as calculated. In addition, since 0.8 micron is the cutoff size, it might be helpful to show a curve with grain size of 0.8 micron.
+>>>
+
+Figure 5 is actually discussed in detail in Section 3.2 paragraph 2. We calculate a set of extinction cross sections curves for a range of particle distributions, with effective radii ranging from 0.05 to 20 um, each with effective variance of 0.1. The optical properties of the dusts follow those of `astronomical silicates’. The extinctions are calculated using the Lorenz-Mie scatter code, with the assumption that the transiting cloud is optically thin. We then calculate the chi^2 difference between the observations and the extinction curves, integrated over the bandpasses. We find that extinction curves with effective particle sizes smaller than 0.8 um can be ruled out at 2 sigma significance. Minor changes were made in-text to clarify this procedure. 
+
+Paragraph 3 of Section 3.2 then compares this particle size constraint to multi-wavelength observations of other `disintegrating planet’ candidates.
+
+We have updated Figure 5 to include the 0.8 micron extinction cross section curve.
+
+>>>I do not find Table 4 necessary because all the information is listed in Table S1 in Vanderburg et al. 2015 paper.
+
+Table 4 has been removed, and the fluxes are now cited to be from Vanderburg et al. 2015.
